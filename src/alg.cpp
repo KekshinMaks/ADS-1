@@ -25,8 +25,8 @@ uint64_t nPrime(uint64_t n) {
   if (n == 0) {
   return 0;
   }
-  unit64_t count = 0;
-  unit64_t number = 1; 
+  uint64_t count = 0;
+  uint64_t number = 1; 
   while (count < n){
   number++;
     if(checkPrime(number)){
@@ -37,7 +37,7 @@ uint64_t nPrime(uint64_t n) {
 }
 
 uint64_t nextPrime(uint64_t value) {
-  unit64_t primenext = value + 1;
+  uint64_t primenext = value + 1;
   while(true){
     if (checkPrime(primenext)){
       return primenext;
